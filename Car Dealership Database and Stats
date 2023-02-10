@@ -1,0 +1,43 @@
+--Create a car dealership database
+
+CREATE TABLE cardealership (id INTEGER PRIMARY KEY, make TEXT, year INTEGER, model TEXT, color TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO cardealership VALUES (1, "Honda", 2007, "Civic", "Blue", 3, 1000);
+
+INSERT INTO cardealership VALUES (2, "Honda", 2008, "Civic", "Blue", 3, 1500);
+
+INSERT INTO cardealership VALUES (3, "Honda", 2009, "Civic", "Blue", 5, 3000);
+
+INSERT INTO cardealership VALUES (4, "Honda", 2010, "Civic", "Blue", 3, 3100);
+
+INSERT INTO cardealership VALUES (5, "Honda", 2011, "Civic", "Blue", 2, 5000);
+
+INSERT INTO cardealership VALUES (6, "Honda", 2012, "Civic", "Blue", 6, 3000);
+
+INSERT INTO cardealership VALUES (7, "Honda", 2013, "Civic", "Blue", 3, 2000);
+
+INSERT INTO cardealership VALUES (8, "Honda", 2014, "Civic", "Blue", 3, 10000);
+
+INSERT INTO cardealership VALUES (9, "Honda", 2015, "Civic", "Blue", 3, 8000);
+
+INSERT INTO cardealership VALUES (10, "Honda", 2016, "Civic", "Blue", 5, 6000);
+
+INSERT INTO cardealership VALUES (11, "Honda", 2017, "Civic", "Blue", 1, 9000);
+
+INSERT INTO cardealership VALUES (12, "Honda", 2018, "Civic", "Blue", 3, 20000);
+
+INSERT INTO cardealership VALUES (13, "Honda", 2019, "Civic", "Blue", 2, 15000);
+
+INSERT INTO cardealership VALUES (14, "Honda", 2020, "Civic", "Blue", 16, 30000);
+
+INSERT INTO cardealership VALUES (15, "Honda", 2021, "Civic", "Blue", 9, 20000);
+
+
+--Display database ordered by price
+
+SELECT * FROM cardealership ORDER BY price;
+
+
+--What is the vehicle with the lowest price in the database?
+
+SELECT MIN(price) FROM cardealership;
