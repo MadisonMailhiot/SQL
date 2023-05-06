@@ -1,4 +1,4 @@
---Create a car dealership database
+--In this file I show the code I wrote to create a car dealership database.
 
 CREATE TABLE cardealership (id INTEGER PRIMARY KEY, make TEXT, year INTEGER, model TEXT, color TEXT, quantity INTEGER, price INTEGER);
 
