@@ -1,4 +1,4 @@
---In this file I have included the SQL queries I wrote to answer the questions below about customer and order data from a database containing multiple tables.    
+--In this file I have included the SQL queries I wrote in SQLite to answer the questions below about customer and order data from a database containing multiple tables.    
 
 -- 1. How many orders were placed in January? 
 SELECT COUNT(*) 
