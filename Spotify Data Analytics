@@ -1,3 +1,4 @@
+
 --First I created the Spotifydata table in SQLiteStudio
 CREATE TABLE BIT_DB.Spotifydata (
 id integer PRIMARY KEY,
@@ -45,3 +46,18 @@ WHERE tempo > 60 AND tempo < 95
 SELECT avg(valence)
 FROM BIT_DB.Spotifydata
 WHERE popularity >= '95'
+
+--5. How many artists have more than one song included in the database?
+SELECT artist_name, count(track_id)
+FROM BIT_DB.Spotifydata
+GROUP BY artist_name
+HAVING count(track_id) > 1
+
+--6. What is the average danceability of the top 3 most popular songs? 
+SELECT avg(danceability)
+FROM BIT_DB.Spotifydata
+WHERE popularity = (
+SELECT popularity FROM BIT_DB.Spotifydata
+ORDER BY popularity DESC
+LIMIT 3
+);
