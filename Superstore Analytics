@@ -1,25 +1,25 @@
---
+--This file contains the SQL I used to query a fictional Superstore database. 
 
---1. Order the items by price
+--1. First, I ordered the items by price
 SELECT *
 FROM superstore 
 ORDER BY price
 ;
 
---2. What is the average price of an item at Superstore?
+--2. Next, I calculated the average price of an item at Superstore
 
 SELECT AVG(price)
 FROM superstore
 ;
 
---3. Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies".
+--3. Next, I calculated the average price for items in the category of "Kitchen Supplies"
 
 SELECT AVG(price)
 FROM superstore
 WHERE category = "Kitchen Supplies"
 ;
 
---4. Which product has the lowest average rating?
+--4. Lastly, I wrote a query to determine which product has the lowest average rating at Superstore
 SELECT item_name, average_rating
 FROM superstore
 ORDER BY average_rating 
